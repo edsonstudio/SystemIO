@@ -28,9 +28,8 @@ namespace SystemIO
                     {
                         foreach (string caminhoArquivo in listaDeArquivos)
                         {
-                            var linhas = (File.ReadLines(caminhoArquivo));
 
-                            string[] props = linhas.ToArray();
+                            string[] props = (File.ReadLines(caminhoArquivo).ToArray()); ;
                             string nome = props[0];
                             string dataDeNascimento = props[1];
 
